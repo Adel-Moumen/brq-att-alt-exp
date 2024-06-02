@@ -8,10 +8,6 @@ module load ffmpeg/4.2.2
 conda deactivate # for some reason, this can fail
 conda activate mamba_ssl
 
-pip install causal-conv1d>=1.2.0
-pip install mamba-ssm
-
-
 echo "***************************"
 echo "r$SLURM_NODEID SLURM_TMPDIR: $SLURM_TMPDIR"
 echo "nnodes=$SLURM_JOB_NUM_NODES"
